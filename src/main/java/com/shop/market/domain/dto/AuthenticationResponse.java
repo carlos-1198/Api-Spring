@@ -1,22 +1,17 @@
 package com.shop.market.domain.dto;
 
 public class AuthenticationResponse {
-    private String username;
-    private String password;
+    private String jwt;
 
-    public String getUsername() {
-        return username;
+    public AuthenticationResponse(String jwt) {
+        this.jwt = jwt;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public String getJwt() {
+        return jwt;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
+    public void setJwt(String jwt) {
+        this.jwt = jwt;
     }
 }
